@@ -1,1 +1,1 @@
-https://northconstellation.github.io/silverfruits/app/silverfruits.html
+https://northconstellation.github.io/silverfruits/app/index.html
