@@ -1,0 +1,11 @@
+mixin head-meta(title, description, href)
+    title= title
+meta(name="description" content= description)
+link(rel="canonical" href= href)
+
+mixin b-product(image, title, text)
+    .b-product
+        img.b-product_image(src= image)
+        .b-product__description
+            h3.b-description__title= title
+            p.b-description__text= text

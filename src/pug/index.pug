@@ -1,0 +1,90 @@
+extends layouts/_layout.pug
+block variables
+    -var currentPage='home'
+block main
+    section
+        .b-container__slide
+            .b-slider.content_middle
+                .b-slider__main
+                    .b-main
+                        .b-main__mainblock
+                            h1.b-main__title Тестовое задание по верстке
+                            p.b-main__subtitle Lorem ipsum dolor sit
+                                span  Silver fruits Fruits
+                                br
+                                |consectetuer adipiscing elit
+                            .b-main__imagebox
+                                .b-imagebox
+                                    .b-imagebox__text Aenean commodo с ligula
+                                    .b-imagebox__left
+                                        img.b-imagebox__img(src="img/kks.png")
+                                        .b-left__about Услинение эффекта похудения в 4 раза
+                                    .b-imagebox__center
+                                    .b-imagebox__right
+                                        img.b-imagebox__img(src="img/silver_kapli.png")
+                                        .b-right__about серебряные капли
+                                .clearfix
+                            .clearfix
+                    .b-order
+                        .b-order__orderform
+                            .b-order__action
+                                p акция
+                            .b-order__title
+                                p Успей заказать
+                            .b-order__subtitle
+                                p с
+                                    span  70% скидкой!
+                            .b-order__price
+                                .b-price
+                                    .b-price__action
+                                        p 990
+                                            span Р
+                                    .b-price__old
+                                        p.b-price__text обычная цена
+                                        p.b-price__cross 3300 руб.
+                                    .clearfix
+                            form.b-form(action="#" method="post")
+                                .b-form__formBlock
+                                    .b-formBlock
+                                        .b-form__formItem
+                                            .b-formItem
+                                                label.b-formItem__title Имя
+                                                input.b-formItem__input(type="text")
+                                        .b-form__formItem
+                                            .b-formItem
+                                                label.b-formItem__title Телефон
+                                                input.b-formItem__input(type="text")
+                                        .b-form__formItem
+                                            .b-formItem.btn-center
+                                                input.b-formItem__orderButton(type="submit", value="Тест Тест Тест Тест")
+                                        .clearfix
+    section
+        .b-container__action
+            .b-action.content_middle
+                .b-action__inform
+                    .b-inform
+                        h2.b-inform__title Cum socii
+                            span s natoque
+                        p.b-inform__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        p.b-inform__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                .b-action__picture
+                    img.b-picture(src="img/action_img.png")
+    section
+        .b-container__consist
+            .b-consist.content_middle
+                h2.b-consist__title Donec pede justo
+                .b-consist__products
+                    .b-products
+                        .b-products__productLeft
+                            .b-productLeft
+                                +b-product ('img/consist_ico1.png', "Fringilla vel", "Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.")
+                        .b-products__productRight
+                            .b-productRight
+                                +b-product ('img/consist_ico2.png', "Aliquet", "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.")
+                    .b-products
+                        .b-products__productLeft
+                            .b-productLeft
+                                +b-product ('img/consist_ico3.png', "Fringilla vel", "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.")
+                        .b-products__productRight
+                            .b-productRight
+                                +b-product ('img/consist_ico4.png', "Enim justo", "Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.")

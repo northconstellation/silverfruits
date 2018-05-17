@@ -1,0 +1,42 @@
+.b-container__action {
+  background-image: url('../img/action_bg.png');
+  background-repeat: no-repeat;
+  font-size: 0;
+  padding: 106px 0 0 0;
+  position: relative;
+  z-index: 100;
+  top:70px;
+  margin-top: -70px;
+}
+
+.b-action__inform {
+  width: 47%;
+  display: inline-block;
+  margin: 0 2% 0 0;
+  vertical-align: top;
+}
+
+.b-inform__title{
+  font-size: 48px;
+  color: #000000;
+  font-weight: normal;
+  span{
+    padding: 10px 20px 10px 0;
+    border-radius:3px;
+    background-color: $color-span;
+  }
+}
+.b-inform__text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 25px 0 0 0;
+}
+.b-action__picture {
+  width: 51%;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top:15px;
+}
+.b-picture{
+}

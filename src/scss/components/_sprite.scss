@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$action-ico-name: 'action_ico';
+$action-ico-x: 0px;
+$action-ico-y: 100px;
+$action-ico-offset-x: 0px;
+$action-ico-offset-y: -100px;
+$action-ico-width: 70px;
+$action-ico-height: 54px;
+$action-ico-total-width: 243px;
+$action-ico-total-height: 154px;
+$action-ico-image: 'sprite.png';
+$action-ico: (0px, 100px, 0px, -100px, 70px, 54px, 243px, 154px, '../img/sprite.png', 'action_ico', );
+$arrow-name: 'arrow';
+$arrow-x: 100px;
+$arrow-y: 0px;
+$arrow-offset-x: -100px;
+$arrow-offset-y: 0px;
+$arrow-width: 99px;
+$arrow-height: 40px;
+$arrow-total-width: 243px;
+$arrow-total-height: 154px;
+$arrow-image: 'sprite.png';
+$arrow: (100px, 0px, -100px, 0px, 99px, 40px, 243px, 154px, '../img/sprite.png', 'arrow', );
+$callback-ico-name: 'callback_ico';
+$callback-ico-x: 215px;
+$callback-ico-y: 94px;
+$callback-ico-offset-x: -215px;
+$callback-ico-offset-y: -94px;
+$callback-ico-width: 21px;
+$callback-ico-height: 21px;
+$callback-ico-total-width: 243px;
+$callback-ico-total-height: 154px;
+$callback-ico-image: 'sprite.png';
+$callback-ico: (215px, 94px, -215px, -94px, 21px, 21px, 243px, 154px, '../img/sprite.png', 'callback_ico', );
+$cross-line-name: 'cross_line';
+$cross-line-x: 86px;
+$cross-line-y: 100px;
+$cross-line-offset-x: -86px;
+$cross-line-offset-y: -100px;
+$cross-line-width: 62px;
+$cross-line-height: 32px;
+$cross-line-total-width: 243px;
+$cross-line-total-height: 154px;
+$cross-line-image: 'sprite.png';
+$cross-line: (86px, 100px, -86px, -100px, 62px, 32px, 243px, 154px, '../img/sprite.png', 'cross_line', );
+$menu-ico1-name: 'menu_ico1';
+$menu-ico1-x: 215px;
+$menu-ico1-y: 47px;
+$menu-ico1-offset-x: -215px;
+$menu-ico1-offset-y: -47px;
+$menu-ico1-width: 26px;
+$menu-ico1-height: 31px;
+$menu-ico1-total-width: 243px;
+$menu-ico1-total-height: 154px;
+$menu-ico1-image: 'sprite.png';
+$menu-ico1: (215px, 47px, -215px, -47px, 26px, 31px, 243px, 154px, '../img/sprite.png', 'menu_ico1', );
+$menu-ico2-name: 'menu_ico2';
+$menu-ico2-x: 164px;
+$menu-ico2-y: 100px;
+$menu-ico2-offset-x: -164px;
+$menu-ico2-offset-y: -100px;
+$menu-ico2-width: 33px;
+$menu-ico2-height: 32px;
+$menu-ico2-total-width: 243px;
+$menu-ico2-total-height: 154px;
+$menu-ico2-image: 'sprite.png';
+$menu-ico2: (164px, 100px, -164px, -100px, 33px, 32px, 243px, 154px, '../img/sprite.png', 'menu_ico2', );
+$menu-ico3-name: 'menu_ico3';
+$menu-ico3-x: 215px;
+$menu-ico3-y: 0px;
+$menu-ico3-offset-x: -215px;
+$menu-ico3-offset-y: 0px;
+$menu-ico3-width: 28px;
+$menu-ico3-height: 31px;
+$menu-ico3-total-width: 243px;
+$menu-ico3-total-height: 154px;
+$menu-ico3-image: 'sprite.png';
+$menu-ico3: (215px, 0px, -215px, 0px, 28px, 31px, 243px, 154px, '../img/sprite.png', 'menu_ico3', );
+$plus-ico-name: 'plus_ico';
+$plus-ico-x: 0px;
+$plus-ico-y: 0px;
+$plus-ico-offset-x: 0px;
+$plus-ico-offset-y: 0px;
+$plus-ico-width: 84px;
+$plus-ico-height: 84px;
+$plus-ico-total-width: 243px;
+$plus-ico-total-height: 154px;
+$plus-ico-image: 'sprite.png';
+$plus-ico: (0px, 0px, 0px, 0px, 84px, 84px, 243px, 154px, '../img/sprite.png', 'plus_ico', );
+$separator-name: 'separator';
+$separator-x: 100px;
+$separator-y: 56px;
+$separator-offset-x: -100px;
+$separator-offset-y: -56px;
+$separator-width: 67px;
+$separator-height: 7px;
+$separator-total-width: 243px;
+$separator-total-height: 154px;
+$separator-image: 'sprite.png';
+$separator: (100px, 56px, -100px, -56px, 67px, 7px, 243px, 154px, '../img/sprite.png', 'separator', );
+$spritesheet-width: 243px;
+$spritesheet-height: 154px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($action-ico, $arrow, $callback-ico, $cross-line, $menu-ico1, $menu-ico2, $menu-ico3, $plus-ico, $separator, );
+$spritesheet: (243px, 154px, 'sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

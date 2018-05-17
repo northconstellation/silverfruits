@@ -1,0 +1,48 @@
+@mixin b-callback ($btn-background, $width, $height, $font-size, $color, $border, $text-style, $border-radius){
+  background-color: $btn-background;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  color: $color;
+  font-size: $font-size-btn;
+  border:$border;
+  font-family: $font-weight-medium;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: 6px 6px 9px rgba(57, 216, 76, 0.4);
+  -moz-box-shadow:    6px 6px 9px rgba(57, 216, 76, 0.4);
+  box-shadow:         6px 6px 9px rgba(57, 216, 76, 0.4);
+  border-radius: $border-radius;
+  position: relative;
+  line-height: 42px;
+  padding: 0 0 0 10px;
+}
+
+@mixin b-callback-hover ($btn-background-hover) {
+  background: $btn-background-hover;
+}
+
+@mixin b-formItem__orderButton ($btn-background, $width, $height, $font-size, $color, $border, $text-style, $border-radius){
+  background-color: $btn-background;
+  display: inline-block;
+  width: $width;
+  height: $height;
+  color: $color;
+  font-size: $font-size-btn;
+  border:$border;
+  font-family: $font-weight-medium;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: 5px 5px 21px rgba(212, 6, 25, 0.47);
+  -moz-box-shadow:    5px 5px 21px rgba(212, 6, 25, 0.47);
+  box-shadow:         5px 5px 21px rgba(212, 6, 25, 0.47);
+  border-radius: $border-radius;
+  position: relative;
+  line-height: 80px;
+}
+
+@mixin b-formItem__orderButton-hover ($btn-background-hover) {
+  background: $btn-background-hover;
+}

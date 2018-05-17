@@ -1,0 +1,69 @@
+header{
+  background-color: $header-color-bg;
+  padding: 8px 0;
+}
+.b-top{
+  font-size: 0;
+}
+.b-top__logo {
+ display: inline-block;
+  width: 17%;
+  vertical-align: middle;
+  margin: 0 2% 0 0;
+}
+.b-top__list {
+  display: inline-block;
+  width: 54%;
+  vertical-align: middle;
+  margin: 0 10.5% 0 0;
+}
+.b-top__callback{
+  display: inline-block;
+  width: 16.5%;
+  vertical-align: middle;
+}
+.b-list{
+
+}
+.b-list__item {
+  font-size: $font-size-top;
+  color: $text-color-top;
+  text-align: left;
+  position: relative;
+  max-width: 115px;
+  margin: 0 0 0 45px;
+  padding: 0 0 0 37px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.b-list__item1:before {
+  content: '';
+  @include sprite($menu_ico2);
+  position: absolute;
+  left:0;
+  top: 0px;
+}
+
+.b-list__item2:before {
+  content: '';
+  @include sprite($menu_ico1);
+  position: absolute;
+  left:0;
+  top: 0px;
+}
+.b-list__item3:before {
+  content: '';
+  @include sprite($menu_ico3);
+  position: absolute;
+  left:0;
+  top: 0px;
+}
+
+.b-callback:before {
+  content: '';
+  @include sprite($callback-ico);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
